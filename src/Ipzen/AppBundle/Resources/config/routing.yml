@@ -1,0 +1,23 @@
+ipzen_app_homepage:
+    path:     /
+    defaults: { _controller: IpzenAppBundle:Default:index }
+
+ipzen_app_admin:
+    path:     /admin
+    defaults: { _controller: IpzenAppBundle:Default:admin }
+
+ipzen_app_profile:
+    path:    /profile
+    defaults: { _controller: IpzenAppBundle:Default:profile }
+
+ipzen_app_whois:
+    path:     /whois
+    defaults: { _controller: IpzenAppBundle:Default:whois }
+
+ipzen_app_whois_bulk:
+    path:     /whois_bulk
+    defaults: { _controller: IpzenAppBundle:Default:whois_bulk }    
+
+ipzen_app_logout:
+    path:     /logout
+    defaults: { _controller: IpzenAppBundle:Security:logout }

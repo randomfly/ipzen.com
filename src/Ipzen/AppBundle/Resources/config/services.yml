@@ -1,0 +1,7 @@
+services:
+    ipzen_app.menu.voter.request:
+        class: Ipzen\AppBundle\Menu\RequestVoter
+        arguments: 
+            - @service_container
+        tags:
+            - { name: knp_menu.voter }	

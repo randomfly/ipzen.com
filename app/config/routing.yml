@@ -1,0 +1,26 @@
+ipzen_app:
+    resource: "@IpzenAppBundle/Resources/config/routing.yml"
+    prefix:   /
+
+login:
+    pattern: /login
+    defaults: { _controller: IpzenAppBundle:Security:login}
+    
+login_check:
+    pattern: /login_check
+
+logout:
+    path:    /logout
+    defaults: { _controller: IpzenAppBundle:Security:logout}
+    
+test_security:
+    pattern: /secured_area
+    defaults: { _controller: IpzenAppBundle:Security:testAuth }
+
+admin:
+    pattern: /admin
+    defaults: { _controller: IpzenAppBundle:Default:admin }
+
+search_whois: 
+    pattern: /whois/search
+    defaults: { _controller: IpzenAppBundle:Whois:search}

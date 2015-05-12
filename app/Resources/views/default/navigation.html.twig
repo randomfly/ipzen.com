@@ -1,0 +1,9 @@
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<a class="brand" href="#">IPzen Surveillance</a>
+		{{ knp_menu_render('IpzenAppBundle:Builder:mainMenu', {'currentClass': 'active', 'template': 'IpzenAppBundle:Menu:knp_menu.html.twig'}) }}
+		{{ knp_menu_render('IpzenAppBundle:Builder:userMenu', {'currentClass': 'active', 'template': 'IpzenAppBundle:Menu:knp_menu.html.twig'}) }}
+		{{ knp_menu_render('IpzenAppBundle:Builder:whoisMenu', {'currentClass': 'active', 'template': 'IpzenAppBundle:Menu:knp_menu.html.twig'}) }}
+	</div>
+</div>
+<div style="margin-top: 40px;"/>

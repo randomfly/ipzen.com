@@ -1,0 +1,33 @@
+{% extends '::base.html.twig' %}
+
+{% block title %} Ipzen - Index {% endblock %}
+
+{% block body %}
+	{% if error %}
+		<div>{{ error.message }}</div>
+	{% endif %}
+	
+
+	<form action="{{ path('login_check') }}" method="post">
+
+		<label for"username">Login :</label>
+		<input type="text" id="username" name ="_username" value="{{ last_username }}" />
+		<br/>
+		<label for="password">Mot de Passe :</label>
+		<input type="password" id="password" name="_password" />
+
+		{#
+			For URL redirections, please use as follows :
+			<input type="hidden" name="_target_path" value="/account" />
+			This will only work on success authentication though
+		#}
+
+		<button type="submit">OK</button>
+	</form>
+
+{% endblock %}
+
+{% block javascripts %}
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/js/bootstrap.min.js"></script>
+{% endblock %}
